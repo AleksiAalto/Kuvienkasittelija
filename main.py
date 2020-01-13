@@ -1,7 +1,5 @@
 from PIL import Image, ImageFilter
 
-#Lisätietoja eri funktioista: https://pillow.readthedocs.io/en/stable/handbook/tutorial.html
-
 img = Image.open('./Pokedex/pikachu.jpg')
 
 #blurrattuKuva = img.filter(ImageFilter.BLUR) #tekee blurratun kuva pikazhusta
