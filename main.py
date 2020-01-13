@@ -18,8 +18,12 @@ img = Image.open('./Pokedex/pikachu.jpg')
 #sharpKuva.save("sharp.png", 'png')
 
 greyScale = img.convert('L')
-greyScale.save("grey.png", 'png')
-greyScale.show() # tulostaa ulos kuvan
+box = (100, 100, 400, 400)
+cropattuPika = greyScale.crop(box)
+#pakattuPika = greyScale.resize((200,200)) #hyväksytään vain tuple- muoto, joten sulkuihin haluttu koko
+#kierrettyPika = greyScale.rotate(30) => kiertää haluamaan suuntaan
+#greyScale.save("grey.png", 'png')
+cropattuPika.show() # tulostaa ulos kuvan
 
 #print(dir(img)) näkee, mitä kaikkia funktioita on käytössä
 
